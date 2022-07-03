@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        h1::before{
+            content: "💖";
+            color: #ffffff;
+            font-size: 40px;
+        }
+        h1::after{
+            content: "💖";
+            font-size: 40px;
+        }
+        body{
+            counter-reset: section;
+        }
+            p::after{
+                content: "💖";
+            }
+            p::before{
+                content: "💖";
+            }
+    </style>
 </head>
 <body>
-    <h1>My first website</h1>
+    <h1 class="special-class">My first website</h1>
     <h1>Wellcome</h1>
+    <p>This a paragraph tag example</p>
+    <p>This a paragraph tag example</p>
+    <p>This a paragraph tag example</p>
+    <p>This a paragraph tag example</p>
     <input type="text">
     <br>
     <button>Click me </button>
